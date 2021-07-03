@@ -1,46 +1,131 @@
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Calculadora de Stake</title>
+<head>
+  
+ <!--
+Inicio das Metas do Site
+ --> 
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link href="css/bts2.css" rel="stylesheet">
-	 <script src="comandos.js"></script>
-	 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-	 <!-- Global site tag (gtag.js) - Google Analytics -->
+	<meta name="title" content="Calculadora de Stake - Calcule suas apostas">
+	<meta name="description" content="Calcule a sua STAKE de apostas no BET365, ferramenta útil para você que tem dificuldade em gerenciar suas apostas.">
+	<meta name="keywords" content="calcular stake, calculadora de stake, stake, calcular aposta bet365, como apostar no bet, alphabet">
+	<meta name="robots" content="index, follow">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="language" content="Portuguese">
+	<meta name="author" content="Samuel Alvarenga" >
+	<meta property="og:title" content="Calculadora de Stake - Calcule suas apostas">
+	<meta property="og:site_name" content="calculadora de Stake">
+	<meta property="og:url" content="https://www.calculastakes.com.br">
+	<meta property="og:description" content="Calcule a sua STAKE de apostas no BET365, ferramenta útil para você que tem dificuldade em gerenciar suas apostas.">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="">
+    
+<!--
+Fim das Metas do Site
+-->  
+
+<!--
+Inicio dos Favicons do Site
+-->
+
+	<link rel="apple-touch-icon" sizes="57x57" href="icos/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="icos/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="icos/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="icos/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="icos/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="icos/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="icos/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="icos/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="icos/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="icos/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="icos/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="icos/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="icos/favicon-16x16.png">
+	<link rel="manifest" href="icos/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="icos/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+<!--
+Fim dos Favicons do Site
+-->
+
+
+<!--
+Inicio das chamadas externas
+-->
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="css/bts2.css" rel="stylesheet">
+	<script src="comandos.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+<!--
+Fim das chamadas externas
+-->
+
+<!--
+Inicio dos Scripts Avulsos
+-->
+
+<script>
+      $(document).ready( function(){
+        $('.ajude').click( function(){
+          toastr.success("Obrigado por utilizar, ajude a nos manter no ar! Contribua com um PIX!");
+        } );
+
+      } );
+
+		$(document).ready(function(){
+    		$('#valor1').keypress(function(e){
+      	if(e.keyCode==13)
+      $('#ajude').click();
+    });
+});         
+  </script>
+
+<!-- Facebook Pixel Code -->
+<script>
+	!function(f,b,e,v,n,t,s)
+	{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+	if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+	n.queue=[];t=b.createElement(e);t.async=!0;
+	t.src=v;s=b.getElementsByTagName(e)[0];
+	s.parentNode.insertBefore(t,s)}(window, document,'script',
+	'https://connect.facebook.net/en_US/fbevents.js');
+	fbq('init', '837014177243737');
+	fbq('track', 'PageView');
+</script>
+	<noscript><img height="1" width="1" style="display:none"
+	src="https://www.facebook.com/tr?id=837014177243737&ev=PageView&noscript=1"
+	/></noscript>
+<!-- End Facebook Pixel Code -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-201207912-1"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-201207912-1');
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	
+	gtag('config', 'UA-201207912-1');
 </script>
 
 <script data-ad-client="ca-pub-9341428183354025" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
-<!-- Facebook Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '837014177243737');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=837014177243737&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Facebook Pixel Code -->
+<!--
+Fim dos Scripts Avulsos
+-->
 
-  </head>
-  <body>
+</head>
+
+
+<body>
+    
 <br>	
 <div class="container alert alert-info text-center" role="alert">
 <strong>Uau!</strong> Calcule seu Stake de apostas de uma forma bem simples!
@@ -85,21 +170,19 @@ src="https://www.facebook.com/tr?id=837014177243737&ev=PageView&noscript=1"
       <br><a>73% de entrada</a><br>
       <input type="text" name="res" id="res7" />
 <br><br>
-      <input type="button" value="Calcular" class="btn btn-outline-primary" onclick="calcular(document.calcform.oper.value)"/>
+      <input type="button" value="Calcular" id="ajude" class="btn btn-outline-primary ajude" onclick="calcular(document.calcform.oper.value)"/>
 
    </fieldset>
 <br>
 </form>
 
-<div class="container text-primary text-center" role="alert">
-Boa sorte! Jogue consciente.
-</div>   
-<br>
+<div class="container text-primary text-center" role="alert">Boa sorte! Jogue consciente.</div><br>
+
 </div>
 <br>
+
 <div class="container alert alert-light bg-dark text-white text-center" role="alert">
 Obrigado por utiliza, este site possui código-aberto, MANTENHA-NOS online, contribua com um pix: pix@calculastake.com.br - PY1SR! 73 
 </div>    
-
-  </body>
+</body>
 </html>
