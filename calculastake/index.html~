@@ -1,0 +1,105 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculadora de Stake</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/bts2.css" rel="stylesheet">
+	 <script src="comandos.js"></script>
+	 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	 <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-201207912-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-201207912-1');
+</script>
+
+<script data-ad-client="ca-pub-9341428183354025" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '837014177243737');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=837014177243737&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+  </head>
+  <body>
+<br>	
+<div class="container alert alert-info text-center" role="alert">
+<strong>Uau!</strong> Calcule seu Stake de apostas de uma forma bem simples!
+</div>
+
+<div class="container border bg-light text-center">
+<form name="calcform" method="post" action="">
+   <fieldset>
+   		<br>
+      	<legend>Calcule a Porcentagem de Aposta</legend><br>
+			<br>
+      	<label for="valor1" class="text-dark">Qual o valor da sua Stake?</label>
+      	<br>
+      	<input type="text" name="valor1" id="valor1" />
+			<br><br>
+      	<select name="oper" id="oper">
+      	<option value="opc1">Apostas</option>
+      	</select>
+<br><br>
+      <label for="res">Resultado:</label> <br>
+	<br>
+		<div class="container text-primary text-center" role="alert">
+			3 entradas
+		</div>
+	<br>
+	<a>6% de entrada</a><br>
+      <input type="text" name="res" id="res1" />
+	<br><a>18% de entrada</a><br>
+      <input type="text" name="res" id="res2" />
+	<br><a>75% de entrada</a><br>
+      <input type="text" name="res" id="res3" />
+      <br><br>
+      <div class="container text-primary text-center" role="alert">
+			4 entradas
+		</div>
+  <br><a>1.5% de entrada</a><br>
+      <input type="text" name="res" id="res4" />
+	<br><a>5% de entrada</a><br>
+      <input type="text" name="res" id="res5" />
+	<br><a>21% de entrada</a><br>
+      <input type="text" name="res" id="res6" />
+      <br><a>73% de entrada</a><br>
+      <input type="text" name="res" id="res7" />
+<br><br>
+      <input type="button" value="Calcular" class="btn btn-outline-primary" onclick="calcular(document.calcform.oper.value)"/>
+
+   </fieldset>
+<br>
+</form>
+
+<div class="container text-primary text-center" role="alert">
+Boa sorte! Jogue consciente.
+</div>   
+<br>
+</div>
+<br>
+<div class="container alert alert-light bg-dark text-white text-center" role="alert">
+Obrigado por utiliza, este site possui código-aberto, MANTENHA-NOS online, contribua com um pix: pix@calculastake.com.br - PY1SR
+</div>    
+
+  </body>
+</html>
